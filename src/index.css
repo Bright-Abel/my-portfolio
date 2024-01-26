@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-7xl px-8;
+  }
+
+  .loading {
+    @apply w-48 h-48 border-4 border-teal-400 rounded-full border-t-teal-300 animate-spin;
+  }
+}
