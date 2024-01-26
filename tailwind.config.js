@@ -15,6 +15,9 @@ export default {
       animation: {
         'spin-slow': 'spin 0.5s linear 1',
       },
+      transitionProperty: {
+        width: 'width',
+      },
     },
   },
   plugins: [],

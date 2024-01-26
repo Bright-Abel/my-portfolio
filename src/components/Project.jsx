@@ -5,14 +5,13 @@ import { useFetchProjects } from './FetchData';
 
 const Project = () => {
   const { project, isLoading, isError } = useFetchProjects();
-  console.log(project);
 
   if (isLoading) {
     return (
       <section className="py-20 align-element" id="projects">
         <div className="border-b border-gray-200 pb-5">
           <h2 className="text-3xl font-medium tracking-wide capitalize">
-            <span className="text-teal-600 ">w</span>eb creations
+            <span className="text-teal-600 animate-pulse">pro</span>jects
           </h2>
         </div>
         <div className="loading align-element mt-16"></div>
@@ -25,7 +24,7 @@ const Project = () => {
       <section className="py-20 align-element" id="projects">
         <div className="border-b border-gray-200 pb-5">
           <h2 className="text-3xl font-medium tracking-wide capitalize">
-            <span className="text-teal-600 ">w</span>eb creations
+            <span className="text-teal-600 animate-pulse">pro</span>jects
           </h2>
         </div>
         <div className=" align-element pt-16">
@@ -41,7 +40,7 @@ const Project = () => {
     <section className="py-20 align-element" id="projects">
       <div className="border-b border-gray-200 pb-5">
         <h2 className="text-3xl font-medium tracking-wide capitalize">
-          <span className="text-teal-600 ">w</span>eb creations
+          <span className="text-teal-600 animate-pulse">pro</span>jects
         </h2>
       </div>
       <div className="py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8">

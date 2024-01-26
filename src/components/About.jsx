@@ -8,7 +8,8 @@ const About = () => {
         <article>
           <div className="border-b border-gray-200 pb-5">
             <h2 className="text-3xl font-medium tracking-wide capitalize">
-              about <span className="text-teal-600 uppercase">m</span>e
+              about{' '}
+              <span className="text-teal-600 uppercase animate-pulse">m</span>e
             </h2>
           </div>
           <p className="text-slate-500 mt-8 leading-loose">
