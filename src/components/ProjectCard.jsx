@@ -18,7 +18,7 @@ const ProjectCard = ({ url, img, github, title, description }) => {
           </a>
 
           <a href={github} target="_blank">
-            <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-zinc-600 duration-300" />
+            <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-zinc-600 duration-300 hover:animate-[spin_0.5s_linear_1]" />
           </a>
         </div>
       </div>
