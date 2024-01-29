@@ -47,7 +47,7 @@ const SideBar = () => {
         })}
       </ul>
 
-      <div className="flex gap-8 mx-auto pb-4">
+      <div className="flex gap-8 mx-auto pb-8">
         <a href="https://github.com/Bright-Abel" target="_blank">
           <FaGithubSquare className="h-8 w-8 text-teal-600 hover:text-teal-400 duration-300 hover:animate-[spin_0.5s_linear_1]" />
         </a>

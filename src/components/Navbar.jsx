@@ -32,7 +32,7 @@ const Navbar = () => {
     left: 0,
     width: '100%',
     // padding: '10px',
-    backgroundColor: isNavbarTransparent ? 'transparent' : '#99f6e3d8',
+    backgroundColor: isNavbarTransparent ? 'transparent' : '#f1f5f9',
     transition: 'background-color 0.3s ease-in-out',
   };
 
