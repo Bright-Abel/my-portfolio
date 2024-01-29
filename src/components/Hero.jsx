@@ -7,7 +7,7 @@ const Hero = () => {
         {/* MY INFO ARTICLE */}
         <article>
           {/* md:grid-cols-2 items-center gap-8 */}
-          <h1 className="text-5xl sm:text-7xl font-bold tracking-wider">
+          <h1 className="text-5xl sm:text-7xl font-bold text-zinc-800 tracking-wider">
             I'm Br<span className="text-teal-600 animate-pulse">i</span>ght
           </h1>
           <p className="mt-4 sm:text-3xl text-2xl text-slate-700 capitalize tracking-wide">
