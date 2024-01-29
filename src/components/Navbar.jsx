@@ -1,22 +1,29 @@
 import { links } from '../data';
 import { FaBars } from 'react-icons/fa';
 import './FetchData';
-import { openSideBar } from '../portfolio_features/sidebarSlice';
+import { closeSideBar, openSideBar } from '../portfolio_features/sidebarSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 const Navbar = () => {
-  let { isSidebarOpen } = useSelector((store) => store.sidebar);
+  const { isSidebarOpen } = useSelector((store) => store.sidebar);
   const dispatch = useDispatch();
   const [isNavbarTransparent, setNavbarTransparent] = useState(true);
+
+  const handleCloseSideBar = () => {
+    dispatch(closeSideBar());
+  };
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const isTransparent = scrollTop === 0;
 
+      if (!isTransparent) {
+        handleCloseSideBar();
+      }
+
       setNavbarTransparent(isTransparent);
     };
-
     // Attach the event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
 
@@ -31,8 +38,7 @@ const Navbar = () => {
     top: 0,
     left: 0,
     width: '100%',
-    // padding: '10px',
-    backgroundColor: isNavbarTransparent ? 'transparent' : '#f0fdfae1',
+    backgroundColor: isNavbarTransparent ? 'transparent' : '#f0fdfaf2',
     transition: 'background-color 0.3s ease-in-out',
   };
 
@@ -41,7 +47,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-teal-100 z-10" style={navbarStyle}>
+    <nav
+      className="bg-teal-100 z-10 drop-shadow-[0_5px_15px_#00000049]"
+      style={navbarStyle}
+    >
       <div className="align-element py-4 flex flex-col gap-y-2  sm:flex-row sm:justify-between sm:gap-x-16 sm:items-center sm:py-8">
         <div className="flex items-center justify-between py-2 sm:p-0">
           <h2 className="sm:text-3xl font-bold text-2xl">

@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react';
 
 const SideBar = () => {
   const { isSidebarOpen } = useSelector((store) => store.sidebar);
-  //   console.log(isSidebarOpen);
   const dispatch = useDispatch();
 
   return (

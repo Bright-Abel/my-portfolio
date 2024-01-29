@@ -2,7 +2,6 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   isSidebarOpen: false,
-  isNavBarTransparent: true,
 };
 const sidebarSlice = createSlice({
   name: 'side',
@@ -15,12 +14,6 @@ const sidebarSlice = createSlice({
     closeSideBar: (state) => {
       state.isSidebarOpen = false;
     },
-    // transparent: (state) => {
-    //   state.isNavBarTransparent = true;
-    // }
-    // noTransparent: (state) => {
-    //   state.isNavBarTransparent = false
-    // }
   },
 });
 

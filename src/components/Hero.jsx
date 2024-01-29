@@ -2,7 +2,7 @@ import heroImg from '../assets/hero.svg';
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 const Hero = () => {
   return (
-    <div className="bg-teal-100 py-24">
+    <div className="bg-teal-100 py-40 sm:pb-24 sm:pt-60">
       <div className="align-element flex md:justify-between">
         {/* MY INFO ARTICLE */}
         <article>

@@ -21,6 +21,9 @@ export default {
       gridTemplateRows: {
         'my-rows': 'auto 1fr auto',
       },
+      dropShadow: {
+        'shadow-blue': '0 5px 15px #00000019',
+      },
     },
   },
   plugins: [],
