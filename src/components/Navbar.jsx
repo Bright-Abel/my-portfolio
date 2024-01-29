@@ -5,7 +5,7 @@ import { openSideBar } from '../portfolio_features/sidebarSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 const Navbar = () => {
-  const { isSidebarOpen } = useSelector((store) => store.sidebar);
+  let { isSidebarOpen } = useSelector((store) => store.sidebar);
   const dispatch = useDispatch();
   const [isNavbarTransparent, setNavbarTransparent] = useState(true);
 
@@ -43,8 +43,8 @@ const Navbar = () => {
   return (
     <nav className="bg-teal-100 z-10" style={navbarStyle}>
       <div className="align-element py-4 flex flex-col gap-y-2  sm:flex-row sm:justify-between sm:gap-x-16 sm:items-center sm:py-8">
-        <div className="flex items-center justify-between p-4 sm:p-0">
-          <h2 className="text-3xl font-bold">
+        <div className="flex items-center justify-between py-2 sm:p-0">
+          <h2 className="sm:text-3xl font-bold text-xl">
             Oluwa
             <span className="text-teal-600">Segun</span>
           </h2>
@@ -52,7 +52,7 @@ const Navbar = () => {
             ' '
           ) : (
             <button
-              className="text-4xl  text-teal-500 bg-transparent animate-pulse border-transparent cursor-pointer sm:hidden"
+              className="text-3xl  text-teal-500 bg-transparent animate-pulse border-transparent cursor-pointer sm:hidden"
               onClick={() => {
                 dispatch(openSideBar());
               }}

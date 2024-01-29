@@ -4,15 +4,17 @@ import { FaTimes } from 'react-icons/fa';
 import { openSideBar, closeSideBar } from '../portfolio_features/sidebarSlice';
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 import { CgMail } from 'react-icons/cg';
+import { useEffect, useState } from 'react';
 
 const SideBar = () => {
   const { isSidebarOpen } = useSelector((store) => store.sidebar);
-  console.log(isSidebarOpen);
+  //   console.log(isSidebarOpen);
   const dispatch = useDispatch();
+
   return (
     <aside className={isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}>
       <div className="flex items-center justify-between py-4 px-6">
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-xl font-bold">
           Oluwa
           <span className="text-teal-600">Segun</span>
         </h2>
