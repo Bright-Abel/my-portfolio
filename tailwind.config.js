@@ -18,6 +18,9 @@ export default {
       transitionProperty: {
         width: 'width',
       },
+      gridTemplateRows: {
+        'my-rows': 'auto 1fr auto',
+      },
     },
   },
   plugins: [],
