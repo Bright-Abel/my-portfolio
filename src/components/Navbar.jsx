@@ -51,9 +51,9 @@ const Navbar = () => {
       className="bg-teal-100 z-10 drop-shadow-[0_5px_15px_#00000049]"
       style={navbarStyle}
     >
-      <div className="align-element py-4 flex flex-col gap-y-2  sm:flex-row sm:justify-between sm:gap-x-16 sm:items-center sm:py-8">
+      <div className="align-element py-4 flex flex-col gap-y-2  sm:flex-row sm:justify-between sm:gap-x-16 sm:items-center sm:py-4">
         <div className="flex items-center justify-between  sm:p-0">
-          <h2 className="text-3xl font-bold ">
+          <h2 className="text-3xl font-bold">
             Oluwa
             <span className="text-teal-600">Segun</span>
           </h2>
