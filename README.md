@@ -1,4 +1,6 @@
-My portfolio, containing some of my project
+link to my portfolio https://oluwasegun-portfolio.netlify.app
+
+### My portfolio, containing some of my project
 
 #### Setup Vite and Tailwind
 
